@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Dragon Research Agent</title>
+  <desc id="desc">Auditable A-share research pipeline with five specialist agents</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111b"/><stop offset=".58" stop-color="#102535"/><stop offset="1" stop-color="#0b2d29"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#72e1c4"/><stop offset="1" stop-color="#79a9ff"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="24"/></filter>
+  </defs>
+  <rect width="1200" height="360" rx="26" fill="url(#bg)"/>
+  <circle cx="1040" cy="30" r="190" fill="#1b5b78" opacity=".22" filter="url(#glow)"/>
+  <circle cx="90" cy="340" r="170" fill="#176751" opacity=".18" filter="url(#glow)"/>
+  <rect x="54" y="58" width="70" height="70" rx="20" fill="#153b3b" stroke="#72e1c4" stroke-opacity=".55"/>
+  <text x="89" y="106" text-anchor="middle" fill="#72e1c4" font-size="38" font-weight="800" font-family="system-ui, sans-serif">龙</text>
+  <text x="152" y="82" fill="#72e1c4" font-size="14" letter-spacing="4" font-family="system-ui, sans-serif">DRAGON / RESEARCH RUNTIME</text>
+  <text x="152" y="126" fill="#f1f5f9" font-size="40" font-weight="720" font-family="system-ui, sans-serif">Dragon Research Agent</text>
+  <text x="58" y="183" fill="#a6b5c6" font-size="18" font-family="system-ui, sans-serif">可解释的 A 股超短研究 · 双阶段证据 · 失败时关闭 · 无实盘路由</text>
+  <g transform="translate(58 230)" font-family="system-ui, sans-serif">
+    <g fill="#111f2c" stroke="#2c4558">
+      <rect width="188" height="72" rx="13"/><rect x="213" width="188" height="72" rx="13"/>
+      <rect x="426" width="188" height="72" rx="13"/><rect x="639" width="188" height="72" rx="13"/>
+      <rect x="852" width="188" height="72" rx="13"/>
+    </g>
+    <g fill="#72e1c4" font-size="12" font-weight="700" letter-spacing="1">
+      <text x="18" y="25">01 · MARKET DATA</text><text x="231" y="25">02 · RESEARCH</text>
+      <text x="444" y="25">03 · EVIDENCE</text><text x="657" y="25">04 · SAFETY</text>
+      <text x="870" y="25">05 · PUBLISHER</text>
+    </g>
+    <g fill="#dce5ed" font-size="15">
+      <text x="18" y="51">行情标准化</text><text x="231" y="51">评分与时点门禁</text>
+      <text x="444" y="51">9:25 / 10:00 冻结</text><text x="657" y="51">执行边界复核</text>
+      <text x="870" y="51">报告与 Console</text>
+    </g>
+    <path d="M188 36h25m188 0h25m188 0h25m188 0h25" stroke="url(#accent)" stroke-width="2" stroke-dasharray="4 5"/>
+  </g>
+</svg>

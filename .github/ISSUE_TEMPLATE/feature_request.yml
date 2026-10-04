@@ -1,0 +1,24 @@
+name: 功能建议
+description: 提议新的 Agent、数据适配器、规则或界面能力
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 要解决的问题
+    validations:
+      required: true
+  - type: dropdown
+    id: layer
+    attributes:
+      label: 所属层
+      options: [Agent 管线, 数据适配器, 研究规则, 安全风控, 用户界面, 文档与示例]
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案与验证方式
+    validations:
+      required: true

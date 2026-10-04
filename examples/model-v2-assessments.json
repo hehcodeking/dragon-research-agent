@@ -1,0 +1,459 @@
+{
+  "schema_version": 1,
+  "trading_date": "2026-10-04",
+  "note": "每项填写 value/source/observed_at/available_at；null 是未判断。请使用真实证据，不倒填时间。",
+  "stocks": {
+    "600519.SH": {
+      "auction_0925": {
+        "factors": {
+          "previous_premium_pct": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "advancement_rate": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "high_board_feedback": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "loss_effect": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "theme_position": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "theme_limit_count": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "theme_ladder": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "theme_anchor": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "catalyst": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "market_position": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "sector_position": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "prior_initiative": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "recognition": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "competition": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "auction_price": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "auction_amount_ratio": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "auction_trend": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "auction_linkage": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "prior_turnover_quality": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "overhead_pressure": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "chip_stability": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "prior_close_structure": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "risk": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          }
+        },
+        "vetoes": {
+          "extreme_retreat": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "sector_core_limit_down": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "material_bad_news": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "regulatory_risk": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "high_open_no_support": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "record_volume_weakness": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "broken_leader_no_sector_recovery": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "repeated_limit_up_to_down": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "competition_lost": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "yesterday_only": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          }
+        }
+      },
+      "intraday_1000": {
+        "factors": {
+          "high_board_feedback": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "limit_structure": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "prior_strong_feedback": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "break_rate": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "theme_new_limits": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "theme_ladder": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "theme_anchor": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "theme_index": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "theme_diffusion": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "initiative": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "resilience": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "influence": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "competition": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "pullback_support": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "recovery_rate": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "vwap_position": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "selloff_volume": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "opening_amount": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "turnover_quality": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "price_volume": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "first_seal_time": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "seal_initiative": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "break_count": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "reseal_speed": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "seal_stability": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "follower_linkage": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "anchor_linkage": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "low_board_linkage": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "index_linkage": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "risk": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          }
+        },
+        "vetoes": {
+          "extreme_retreat": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "sector_core_limit_down": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "material_bad_news": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "regulatory_risk": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "high_open_no_support": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "record_volume_weakness": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "broken_leader_no_sector_recovery": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "repeated_limit_up_to_down": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "competition_lost": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          },
+          "yesterday_only": {
+            "value": null,
+            "source": null,
+            "observed_at": null,
+            "available_at": null
+          }
+        }
+      }
+    }
+  }
+}

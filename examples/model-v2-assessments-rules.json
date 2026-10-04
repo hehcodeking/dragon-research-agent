@@ -1,0 +1,626 @@
+{
+  "auction_0925": [
+    {
+      "key": "previous_premium_pct",
+      "label": "昨日涨停股平均溢价",
+      "category": "市场情绪",
+      "max_score": 5,
+      "kind": "number",
+      "unit": "百分点",
+      "rule": "<0:0；0~1:1；(1,2]:3；(2,3]:4；>3:5"
+    },
+    {
+      "key": "advancement_rate",
+      "label": "连板晋级率",
+      "category": "市场情绪",
+      "max_score": 5,
+      "kind": "number",
+      "unit": "0..1",
+      "rule": "<0.2:0；[0.2,0.3]:1；(0.3,0.4]:3；(0.4,0.5]:4；>0.5:5"
+    },
+    {
+      "key": "high_board_feedback",
+      "label": "最高板/高标反馈",
+      "category": "市场情绪",
+      "max_score": 5,
+      "kind": "enum",
+      "options": {
+        "高标普遍强势高开、核心继续晋级预期强": 5,
+        "高标分化，但核心有承接": 3,
+        "高标明显低开、批量负反馈": 1,
+        "核心高标核按钮/天地板延续": 0
+      }
+    },
+    {
+      "key": "loss_effect",
+      "label": "涨跌停及亏钱效应",
+      "category": "市场情绪",
+      "max_score": 5,
+      "kind": "enum",
+      "options": {
+        "涨停明显多于跌停，亏钱效应小": 5,
+        "情绪中性": 3,
+        "跌停增加、昨日强股普遍无溢价": 1,
+        "大面积核按钮/极端退潮": 0
+      }
+    },
+    {
+      "key": "theme_position",
+      "label": "题材市场地位",
+      "category": "题材强度",
+      "max_score": 5,
+      "kind": "enum",
+      "options": {
+        "市场绝对主线": 5,
+        "次主线": 3,
+        "支线/轮动": 1,
+        "无板块效应": 0
+      }
+    },
+    {
+      "key": "theme_limit_count",
+      "label": "题材涨停数量",
+      "category": "题材强度",
+      "max_score": 3,
+      "kind": "integer",
+      "unit": "只",
+      "rule": "0~1:0；2~4:1；5~9:2；>=10:3"
+    },
+    {
+      "key": "theme_ladder",
+      "label": "梯队完整度",
+      "category": "题材强度",
+      "max_score": 3,
+      "kind": "enum",
+      "options": {
+        "梯队完整": 3,
+        "有高标+中位，但断层明显": 2,
+        "只有单一高标": 1,
+        "无梯队": 0
+      }
+    },
+    {
+      "key": "theme_anchor",
+      "label": "容量中军",
+      "category": "题材强度",
+      "max_score": 2,
+      "kind": "enum",
+      "options": {
+        "中军趋势新高/强势高开": 2,
+        "中军中性": 1,
+        "中军明显走弱": 0
+      }
+    },
+    {
+      "key": "catalyst",
+      "label": "催化持续性",
+      "category": "题材强度",
+      "max_score": 2,
+      "kind": "enum",
+      "options": {
+        "有明确持续催化/产业逻辑": 2,
+        "有短期消息刺激": 1,
+        "纯情绪炒作": 0
+      }
+    },
+    {
+      "key": "market_position",
+      "label": "全市场身位",
+      "category": "龙头地位",
+      "max_score": 5,
+      "kind": "enum",
+      "options": {
+        "市场最高板": 5,
+        "次高板": 3,
+        "板块最高板但非市场高标": 2,
+        "非身位核心": 0
+      }
+    },
+    {
+      "key": "sector_position",
+      "label": "板块地位",
+      "category": "龙头地位",
+      "max_score": 5,
+      "kind": "enum",
+      "options": {
+        "板块公认龙头": 5,
+        "核心前排": 4,
+        "补涨核心": 2,
+        "跟风": 0
+      }
+    },
+    {
+      "key": "prior_initiative",
+      "label": "过去1~3日主动性",
+      "category": "龙头地位",
+      "max_score": 5,
+      "kind": "enum",
+      "options": {
+        "极强主动性": 5,
+        "较强": 4,
+        "一般": 2,
+        "明显被动跟随": 0
+      }
+    },
+    {
+      "key": "recognition",
+      "label": "辨识度",
+      "category": "龙头地位",
+      "max_score": 5,
+      "kind": "enum",
+      "options": {
+        "市场级辨识度": 5,
+        "板块级辨识度": 4,
+        "有一定辨识度": 2,
+        "普通跟风": 0
+      }
+    },
+    {
+      "key": "competition",
+      "label": "竞争格局",
+      "category": "龙头地位",
+      "max_score": 5,
+      "kind": "enum",
+      "options": {
+        "已淘汰同身位竞争者": 5,
+        "明显领先竞争者": 4,
+        "双雄并列": 2,
+        "竞争处于劣势": 0
+      }
+    },
+    {
+      "key": "auction_price",
+      "label": "竞价价格超预期",
+      "category": "集合竞价",
+      "max_score": 10,
+      "kind": "auction_price",
+      "unit": "gap为百分点",
+      "rule": "依据昨日形态、gap与健康量能按文档保守边界计分"
+    },
+    {
+      "key": "auction_amount_ratio",
+      "label": "竞价成交额/昨日成交额",
+      "category": "集合竞价",
+      "max_score": 6,
+      "kind": "number",
+      "unit": "0..1",
+      "rule": "<0.005或>0.06:0；[0.005,0.01]:1；(0.01,0.02]:3；(0.02,0.03]:5；(0.03,0.06]:6"
+    },
+    {
+      "key": "auction_trend",
+      "label": "9:20~9:25竞价趋势",
+      "category": "集合竞价",
+      "max_score": 5,
+      "kind": "enum",
+      "options": {
+        "价格持续上移+匹配成交增加": 5,
+        "整体稳定偏强": 4,
+        "价格震荡": 2,
+        "价格不断下移": 0
+      }
+    },
+    {
+      "key": "auction_linkage",
+      "label": "竞价板块联动",
+      "category": "集合竞价",
+      "max_score": 4,
+      "kind": "enum",
+      "options": {
+        "龙头+中军+跟风同步强": 4,
+        "龙头强，中军配合": 3,
+        "只有龙头独强": 1,
+        "板块明显负反馈": 0
+      }
+    },
+    {
+      "key": "prior_turnover_quality",
+      "label": "昨日换手质量",
+      "category": "筹码/昨日结构",
+      "max_score": 4,
+      "kind": "enum",
+      "options": {
+        "爆量分歧后强势回封": 4,
+        "正常换手板": 3,
+        "缩量加速": 2,
+        "爆量未封稳": 0
+      }
+    },
+    {
+      "key": "overhead_pressure",
+      "label": "套牢盘压力",
+      "category": "筹码/昨日结构",
+      "max_score": 2,
+      "kind": "enum",
+      "options": {
+        "上方压力小": 2,
+        "有一定前高压力": 1,
+        "巨量套牢区": 0
+      }
+    },
+    {
+      "key": "chip_stability",
+      "label": "筹码稳定性",
+      "category": "筹码/昨日结构",
+      "max_score": 2,
+      "kind": "enum",
+      "options": {
+        "筹码结构健康": 2,
+        "一般": 1,
+        "明显松动": 0
+      }
+    },
+    {
+      "key": "prior_close_structure",
+      "label": "昨日尾盘结构",
+      "category": "筹码/昨日结构",
+      "max_score": 2,
+      "kind": "enum",
+      "options": {
+        "尾盘封单稳定": 2,
+        "有漏单但仍稳": 1,
+        "尾盘明显抢跑": 0
+      }
+    },
+    {
+      "key": "risk",
+      "label": "风险修正",
+      "category": "风险修正",
+      "max_score": 5,
+      "kind": "risk",
+      "unit": "每项扣分0..5",
+      "rule": "必须reviewed=true；max(0,5-扣分之和)"
+    }
+  ],
+  "intraday_1000": [
+    {
+      "key": "high_board_feedback",
+      "label": "高标反馈",
+      "category": "市场实时情绪",
+      "max_score": 5,
+      "kind": "enum",
+      "options": {
+        "高标普遍晋级/强承接": 5,
+        "核心强、杂毛分化": 4,
+        "高标明显走弱": 1,
+        "批量核按钮": 0
+      }
+    },
+    {
+      "key": "limit_structure",
+      "label": "涨停/跌停结构",
+      "category": "市场实时情绪",
+      "max_score": 4,
+      "kind": "enum",
+      "options": {
+        "涨停快速扩散，跌停少": 4,
+        "中性": 2,
+        "跌停扩散": 0
+      }
+    },
+    {
+      "key": "prior_strong_feedback",
+      "label": "昨日强股反馈",
+      "category": "市场实时情绪",
+      "max_score": 3,
+      "kind": "enum",
+      "options": {
+        "昨日强股多数给溢价": 3,
+        "分化": 2,
+        "普遍负反馈": 0
+      }
+    },
+    {
+      "key": "break_rate",
+      "label": "炸板率",
+      "category": "市场实时情绪",
+      "max_score": 3,
+      "kind": "enum",
+      "options": {
+        "炸板率低": 3,
+        "中性": 2,
+        "炸板率明显升高": 0
+      }
+    },
+    {
+      "key": "theme_new_limits",
+      "label": "10点前新增涨停",
+      "category": "题材实时强度",
+      "max_score": 4,
+      "kind": "enum",
+      "options": {
+        "板块持续新增涨停": 4,
+        "有1~2只助攻": 2,
+        "无新增": 0
+      }
+    },
+    {
+      "key": "theme_ladder",
+      "label": "梯队晋级",
+      "category": "题材实时强度",
+      "max_score": 4,
+      "kind": "enum",
+      "options": {
+        "高中低梯队同步强化": 4,
+        "龙头强、低位有助攻": 3,
+        "只有龙头": 1,
+        "梯队坍塌": 0
+      }
+    },
+    {
+      "key": "theme_anchor",
+      "label": "容量中军",
+      "category": "题材实时强度",
+      "max_score": 3,
+      "kind": "enum",
+      "options": {
+        "中军放量上涨/突破": 3,
+        "中性": 1,
+        "中军跳水": 0
+      }
+    },
+    {
+      "key": "theme_index",
+      "label": "板块指数/整体涨幅",
+      "category": "题材实时强度",
+      "max_score": 2,
+      "kind": "enum",
+      "options": {
+        "强": 2,
+        "中性": 1,
+        "弱": 0
+      }
+    },
+    {
+      "key": "theme_diffusion",
+      "label": "题材扩散性（人工等级）",
+      "category": "题材实时强度",
+      "max_score": 2,
+      "kind": "enum",
+      "options": {
+        "人工评为强": 2,
+        "人工评为中": 1,
+        "人工评为弱": 0
+      }
+    },
+    {
+      "key": "initiative",
+      "label": "主动领涨",
+      "category": "龙头地位与主动性",
+      "max_score": 5,
+      "kind": "enum",
+      "options": {
+        "率先上板/率先拉升": 5,
+        "与核心同步": 3,
+        "被动跟随": 0
+      }
+    },
+    {
+      "key": "resilience",
+      "label": "分歧时抗跌",
+      "category": "龙头地位与主动性",
+      "max_score": 5,
+      "kind": "enum",
+      "options": {
+        "板块跳水时明显抗跌": 5,
+        "正常同步": 3,
+        "跌幅大于板块": 0
+      }
+    },
+    {
+      "key": "influence",
+      "label": "带动性",
+      "category": "龙头地位与主动性",
+      "max_score": 5,
+      "kind": "enum",
+      "options": {
+        "拉升明显带动板块": 5,
+        "有一定带动": 3,
+        "完全无带动": 0
+      }
+    },
+    {
+      "key": "competition",
+      "label": "卡位结果",
+      "category": "龙头地位与主动性",
+      "max_score": 5,
+      "kind": "enum",
+      "options": {
+        "明显卡掉竞争者": 5,
+        "暂时领先": 3,
+        "双雄未分胜负": 2,
+        "被竞争者卡掉": 0
+      }
+    },
+    {
+      "key": "pullback_support",
+      "label": "回撤承接",
+      "category": "分时承接",
+      "max_score": 8,
+      "kind": "enum",
+      "options": {
+        "强承接": 7,
+        "较强": 5,
+        "一般": 3,
+        "弱": 0
+      }
+    },
+    {
+      "key": "recovery_rate",
+      "label": "回撤修复率",
+      "category": "分时承接",
+      "max_score": 6,
+      "kind": "number",
+      "unit": "0..1",
+      "rule": "<0.2:0；[0.2,0.4]:1；(0.4,0.6]:3；(0.6,0.8):5；>=0.8:6"
+    },
+    {
+      "key": "vwap_position",
+      "label": "均价线表现",
+      "category": "分时承接",
+      "max_score": 3,
+      "kind": "enum",
+      "options": {
+        "大部分时间运行于均价线上方": 3,
+        "多次争夺均价线": 2,
+        "长期压在均价线下": 0
+      }
+    },
+    {
+      "key": "selloff_volume",
+      "label": "下杀量价",
+      "category": "分时承接",
+      "max_score": 3,
+      "kind": "enum",
+      "options": {
+        "下杀缩量、拉升放量": 3,
+        "量价中性": 1,
+        "下杀放量、反弹缩量": 0
+      }
+    },
+    {
+      "key": "opening_amount",
+      "label": "开盘成交额占比与价格",
+      "category": "成交/换手结构",
+      "max_score": 3,
+      "kind": "enum",
+      "options": {
+        "放量且价格强": 3,
+        "适度放量": 2,
+        "巨量滞涨": 0
+      }
+    },
+    {
+      "key": "turnover_quality",
+      "label": "换手充分度",
+      "category": "成交/换手结构",
+      "max_score": 3,
+      "kind": "enum",
+      "options": {
+        "分歧充分且承接住": 3,
+        "换手一般": 2,
+        "极端缩量/极端爆量失控": 0
+      }
+    },
+    {
+      "key": "price_volume",
+      "label": "价格与成交同步",
+      "category": "成交/换手结构",
+      "max_score": 4,
+      "kind": "enum",
+      "options": {
+        "放量上涨、缩量回调": 4,
+        "量价正常": 2,
+        "放量下跌、反弹无量": 0
+      }
+    },
+    {
+      "key": "first_seal_time",
+      "label": "首次封板时间",
+      "category": "涨停/冲板质量",
+      "max_score": 2,
+      "kind": "time",
+      "unit": "HH:MM",
+      "rule": "09:25~09:34:2；09:35~09:49:1；09:50~10:00:0"
+    },
+    {
+      "key": "seal_initiative",
+      "label": "封板主动性",
+      "category": "涨停/冲板质量",
+      "max_score": 2,
+      "kind": "enum",
+      "options": {
+        "主动扫板": 2,
+        "被动推板": 1
+      }
+    },
+    {
+      "key": "break_count",
+      "label": "炸板次数",
+      "category": "涨停/冲板质量",
+      "max_score": 2,
+      "kind": "integer",
+      "unit": "次",
+      "rule": "0:2；1需独立确认良性才2，否则缺失；2:1；>=3:0"
+    },
+    {
+      "key": "reseal_speed",
+      "label": "回封速度",
+      "category": "涨停/冲板质量",
+      "max_score": 2,
+      "kind": "enum",
+      "options": {
+        "快速回封": 2,
+        "震荡后回封": 1,
+        "无法回封": 0
+      }
+    },
+    {
+      "key": "seal_stability",
+      "label": "封板稳定性",
+      "category": "涨停/冲板质量",
+      "max_score": 2,
+      "kind": "enum",
+      "options": {
+        "封单稳定、漏单少": 2,
+        "一般": 1,
+        "持续漏单": 0
+      }
+    },
+    {
+      "key": "follower_linkage",
+      "label": "龙头拉升带动跟风",
+      "category": "板块联动",
+      "max_score": 3,
+      "kind": "enum",
+      "options": {
+        "明显带动": 3,
+        "一般": 1,
+        "无": 0
+      }
+    },
+    {
+      "key": "anchor_linkage",
+      "label": "带动中军",
+      "category": "板块联动",
+      "max_score": 2,
+      "kind": "enum",
+      "options": {
+        "明显": 2,
+        "一般": 1,
+        "无": 0
+      }
+    },
+    {
+      "key": "low_board_linkage",
+      "label": "带动首板/补涨",
+      "category": "板块联动",
+      "max_score": 2,
+      "kind": "enum",
+      "options": {
+        "有明显助攻": 2,
+        "一般": 1,
+        "无": 0
+      }
+    },
+    {
+      "key": "index_linkage",
+      "label": "板块指数同步",
+      "category": "板块联动",
+      "max_score": 1,
+      "kind": "enum",
+      "options": {
+        "同步回流": 1,
+        "不跟": 0
+      }
+    },
+    {
+      "key": "risk",
+      "label": "风险修正",
+      "category": "风险修正",
+      "max_score": 2,
+      "kind": "risk",
+      "unit": "每项扣分0..2",
+      "rule": "必须reviewed=true；max(0,2-扣分之和)"
+    }
+  ]
+}

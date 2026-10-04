@@ -1,0 +1,31 @@
+{
+  "order_id": "example-synthetic-buy-001",
+  "symbol": "600001.SH",
+  "side": "buy",
+  "quantity": 100,
+  "quote": {
+    "symbol": "600001.SH",
+    "name": "演示龙头甲",
+    "price": 12.24,
+    "prev_close": 12.0,
+    "open": 12.24,
+    "high": 13.2,
+    "low": 12.24,
+    "volume": 80000000,
+    "turnover": 1017600000.0,
+    "change_pct": 10.0,
+    "turnover_pct": 9,
+    "board_count": 2,
+    "seal_money": 90000000,
+    "max_seal_money": 100000000,
+    "theme": "合成算力",
+    "first_limit_time": "09:32",
+    "is_st": false,
+    "is_new": false,
+    "suspended": false,
+    "quote_asof": "2026-09-14T09:30:00+08:00",
+    "limit_up": 13.2,
+    "limit_down": 10.8
+  },
+  "asof": "2026-09-14T09:30:00+08:00"
+}
